@@ -5,7 +5,7 @@
   body {
     margin: 0;
     background: #202124;
-    font-family: "Euclid Circular A";
+      font-family: sans-serif;
   }
   
   button {
@@ -31,19 +31,21 @@
   .sidebar-header {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 80px;
     padding: 0 1.25rem 0 0;
     background: rgba(0, 0, 0, 0.1);
     color: #d4d4ea;
 
   }
   
-  .sidebar .sidebar-header button {
+  .btn{
+    padding: 0 25px;
     width: 64px;
   }
   
   .sidebar-logo {
     height: 20px;
+    cursor: default;
   }
   
   .sidebar-nav {
@@ -75,37 +77,13 @@
     flex: 1 1 auto;
   }
   
-  .sidebar button.active {
+  .sidebar button:hover {
     background: #6a28cb;
   }
-  
-  .sub-nav {
-    overflow: hidden;
-    height: 0;
-    transition: 0.5s;
+  button.sub-nav  {
+    padding-left: 72px; 
   }
   
-  .sub-nav.open {
+  .subitem{
     height: 200px;
-  }
-  
-  .sub-nav button {
-    padding-left: 72px;
-  }
-  
-  .sub-nav button::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 36px;
-    translate: 0 -50%;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #d4d4ea;
-  }
-  
-  .material-symbols-outlined {
-    font-size: 22px;
-  }
-  
+  }  
